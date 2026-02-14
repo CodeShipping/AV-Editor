@@ -1,0 +1,63 @@
+# NOTICE
+
+## Attribution and License Information
+
+This project, **AV Editor**, is a modified version of **VSound** created by **BBK Development**.
+
+### Original Work
+- **Project Name:** VSound
+- **Original Author:** BBK Development
+- **Original Repository:** https://github.com/BBKDevelopment/VSound
+- **Original Copyright:** Copyright © 2021-2023 BBK Development
+- **License:** GNU General Public License v3.0 (GPL-3.0)
+
+### Modified Work
+- **Project Name:** AV Editor  
+- **Modified By:** CodeShipping
+- **Repository:** https://github.com/CodeShipping/AV-Editor
+- **Modifications Copyright:** Copyright © 2026 CodeShipping
+- **License:** GNU General Public License v3.0 (GPL-3.0)
+
+### Key Modifications Made
+1. Updated Android Gradle Plugin (AGP) from 7.3.0 to 8.11.0
+2. Updated Kotlin from 1.7.10 to 2.1.0
+3. Updated Gradle wrapper from 7.5 to 8.13
+4. Updated Java compatibility from 1.8 to 17
+5. Replaced discontinued `ffmpeg_kit_flutter_https_gpl` with `ffmpeg_kit_flutter_new_https_gpl`
+6. Replaced `image_gallery_saver` with `image_gallery_saver_plus`
+7. Replaced `launch_review_service` git dependency with local implementation using `in_app_review`
+8. Inlined all service packages (audio_player_service, photo_manager_service, etc.) as local code
+9. Updated package name from `com.BBKDevelopment.VSound` to `org.codeshipping.aveditor`
+10. Updated app branding to "AV Editor" by CodeShipping
+11. Updated all dependencies to be compatible with Flutter 3.38.7
+12. Fixed multiple build and compatibility issues
+
+### License Terms
+
+Both the original work and this modified work are licensed under the **GNU General Public License v3.0**.
+
+This means:
+- ✅ You are free to use, study, modify, and distribute this software
+- ✅ You can use it commercially (charge for it, add ads, etc.)
+- ✅ You must keep this license (GPL v3) for any derivative works
+- ✅ You must provide source code to anyone who receives the compiled app
+- ✅ You must clearly state modifications made
+- ❌ You cannot make it proprietary/closed source
+
+See the LICENSE file for full terms.
+
+### Third-Party Components
+
+This app uses various open-source packages. See `pubspec.yaml` for the complete list of dependencies and their licenses.
+
+Notable third-party components:
+- FFmpeg Kit (GPL)
+- Just Audio (Apache 2.0)
+- Photo Manager (Apache 2.0)
+- Various Flutter plugins (see individual licenses)
+
+---
+
+**For questions or licensing inquiries, contact:**
+- CodeShipping: admin@codeshipping.org
+- Original Author (BBK Development): hello@bbkdevelopment.com

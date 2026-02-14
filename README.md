@@ -1,67 +1,65 @@
-# <p align="center">VSound</p> 
+# <p align="center">AV Editor</p> 
 
-<p align="justify">VSound can add audio to the video and save it to the gallery for you. It also provides the user some possibilities like muting video, changing the playback speed of the video, changing the quality of output video.</p>
+<p align="justify">AV Editor is a video audio editing app that can add audio to videos, remove audio from videos, adjust playback speed, and change video quality. All processing is done on-device and videos are saved directly to your gallery.</p>
 
-<p align="justify">VSound provides premium content to the user while it is ad-free. We expect only one thing from you/user, and that is a positive and supportive comment about VSound on the platform where you download it to your device.</p>
+<p align="justify">This is a modified version of VSound by BBK Development, rebranded and maintained by CodeShipping. The app is free, open-source (GPL v3), and ad-free.</p>
 
 &nbsp;
 
-<p align="center">Official Website: <a href="https://www.bbkdevelopment.com/bbk-development/vsound">BBK Development</a></p>
+<p align="center">Official Repository: <a href="https://github.com/CodeShipping/AV-Editor">CodeShipping</a></p>
 
 &nbsp;
 
 ### Key Features
--	Add audio to video right on your device.
--   Review the video, before process it.
--   Mute video.
--   Change the playback speed of the video.
--   Change the quality of the output video.
--   On your gallery, you may access clips/videos after the process.
--   Share them anywhere you want.
--   No watermark on output video.
--   VSound provides premium content, yet it is ad-free..
+- Add audio/music to any video
+- Review the video before processing
+- Mute/remove audio from videos
+- Change video playback speed (0.25x to 2.0x)
+- Change output video quality (240p to 2160p/4K)
+- Save processed videos to gallery
+- Share videos anywhere
+- No watermark on output videos
+- Completely ad-free
+- Works offline
 
 &nbsp;
 
-## <p align="center">Available on Stores</p> 
+## <p align="center">Technical Details</p>
+
+- **Package:** org.codeshipping.aveditor
+- **License:** GPL v3
+- **Based on:** VSound by BBK Development
+- **Processing:** FFmpeg
+- **Platforms:** Android
 
 &nbsp;
 
-[<p align="center"><img src="images/badge-black1.png" width="300"></p>](https://play.google.com/store/apps/details?id=com.BBKDevelopment.VSound)[<p align="center"><img src="images/badge-black2.png" width="300"></p>](https://appgallery.huawei.com/#/app/C104702973)
+## <p align="center">Attribution</p>
+
+This app is a modified version of **VSound** created by **BBK Development**.
+
+Original project: https://github.com/BBKDevelopment/VSound
+
+Licensed under GPL v3, which allows commercial use, modification, and distribution with the requirement that derivative works remain open source under the same license.
 
 &nbsp;
 
-## <p align="center">Versions</p> 
+## <p align="center">Privacy & Terms</p>
+
+[<p align="center">Privacy Policy</p>](https://codeshipping.org/apps/aveditor/privacy-policy)
 
 &nbsp;
 
-<p align=right>Sep 11, 2021</p>
-<p align=left>1.0.1</p> 
-
-Release notes:
-
-- Now music stops when the video ends.
-- Fixed some minor bugs.
+[<p align="center">Terms & Conditions</p>](https://codeshipping.org/apps/aveditor/terms-and-conditions)
 
 &nbsp;
 
-&nbsp;
+## <p align="center">License</p>
 
-<p align=right>Sep 02, 2021</p>
-<p align=left>1.0.0</p>
-
-Release notes:
-
-- Release version, VSound released on stores.
+This project is licensed under GPL v3. See LICENSE file for details.
 
 &nbsp;
 
-## <p align="center">Privacy & Terms</p> 
+---
 
-&nbsp;
-
-[<p align="center">Privacy Policy</p>](https://www.bbkdevelopment.com/bbk-development/vsound/privacy-policy)
-
-&nbsp;
-
-[<p align="center">Terms & Conditions</p>](https://www.bbkdevelopment.com/bbk-development/vsound/terms-and-conditions)
+**Note:** You must publish the source code of this app if you distribute it, as required by GPL v3.
