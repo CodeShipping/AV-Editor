@@ -39,7 +39,7 @@ class _CopyrightWidget extends StatelessWidget {
             'Based on VSound by BBK Development',
             style: context.textTheme.bodySmall?.copyWith(
               fontSize: 10,
-              color: context.textTheme.bodySmall?.color?.withOpacity(0.7),
+              color: context.textTheme.bodySmall?.color?.withValues(alpha: 0.7),
             ),
             textAlign: TextAlign.center,
           ),
@@ -48,7 +48,7 @@ class _CopyrightWidget extends StatelessWidget {
             'Open Source (GPL v3) • github.com/CodeShipping/AV-Editor',
             style: context.textTheme.bodySmall?.copyWith(
               fontSize: 10,
-              color: context.textTheme.bodySmall?.color?.withOpacity(0.7),
+              color: context.textTheme.bodySmall?.color?.withValues(alpha: 0.7),
             ),
             textAlign: TextAlign.center,
           ),

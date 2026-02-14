@@ -19,10 +19,8 @@ class LaunchReviewService {
   const LaunchReviewService({
     String? androidAppId,
     String? iOSAppId,
-  })  : _androidAppId = androidAppId,
-        _iOSAppId = iOSAppId;
+  }) : _iOSAppId = iOSAppId;
 
-  final String? _androidAppId;
   final String? _iOSAppId;
 
   /// Launches the app store page for this app.
