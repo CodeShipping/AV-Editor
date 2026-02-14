@@ -73,7 +73,15 @@ class PhotoManagerService {
   Future<void> requestPermission() async {
     final PermissionState result;
     try {
-      result = _permissionState ?? await PhotoManager.requestPermissionExtend();
+      result = _permissionState ??
+          await PhotoManager.requestPermissionExtend(
+            requestOption: const PermissionRequestOption(
+              androidPermission: AndroidPermission(
+                type: RequestType.common,
+                mediaLocation: false,
+              ),
+            ),
+          );
     } catch (_) {
       log('Failed to request permission!', name: 'PhotoManagerService');
       throw PermissionException();
@@ -98,27 +106,31 @@ class PhotoManagerService {
       throw PermissionException();
     }
 
-    final List<AssetEntity>? assets;
     try {
       final assetPaths = _assetPaths ??
           await PhotoManager.getAssetPathList(type: RequestType.audio);
-      final recentAssetPath = assetPaths.isNotEmpty ? assetPaths[0] : null;
-      assets = _assets ??
-          await recentAssetPath?.getAssetListRange(
+      
+      log('Found ${assetPaths.length} audio paths', name: 'PhotoManagerService');
+      
+      if (assetPaths.isEmpty) {
+        // No audio files found on device - return empty list instead of throwing
+        log('No audio files found on device', name: 'PhotoManagerService');
+        return [];
+      }
+      
+      final recentAssetPath = assetPaths[0];
+      final assets = _assets ??
+          await recentAssetPath.getAssetListRange(
             start: 0,
             end: 1000,
           );
-    } catch (_) {
-      log('Failed to get audio assets!', name: 'PhotoManagerService');
+      
+      log('Retrieved ${assets.length} audio assets', name: 'PhotoManagerService');
+      return assets;
+    } catch (e) {
+      log('Failed to get audio assets: $e', name: 'PhotoManagerService');
       throw GetAudioException();
     }
-
-    if (assets == null) {
-      log('Failed to get audio assets!', name: 'PhotoManagerService');
-      throw GetAudioException();
-    }
-
-    return assets;
   }
 
   /// Gets the video assets.
