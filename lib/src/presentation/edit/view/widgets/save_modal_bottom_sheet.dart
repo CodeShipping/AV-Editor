@@ -50,8 +50,7 @@ class SaveModalBottomSheet extends StatelessWidget {
 
                         Get.back<void>();
                       },
-                      overlayColor:
-                          WidgetStateProperty.all(Colors.transparent),
+                      overlayColor: WidgetStateProperty.all(Colors.transparent),
                       highlightColor: Colors.transparent,
                       child: Obx(
                         () {

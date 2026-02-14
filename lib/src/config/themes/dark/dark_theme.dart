@@ -107,6 +107,7 @@ class DarkTheme {
       // Sliding color
       secondary: const Color(0xFFF8F3F7),
       surface: const Color(0xFF181818),
-    ), tabBarTheme: const TabBarThemeData(indicatorColor: Color(0xB3F8F3F7)),
+    ),
+    tabBarTheme: const TabBarThemeData(indicatorColor: Color(0xB3F8F3F7)),
   );
 }

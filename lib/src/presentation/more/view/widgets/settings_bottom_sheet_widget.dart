@@ -44,8 +44,7 @@ class _SettingsBottomSheetWidget extends StatelessWidget {
                     ),
                     InkWell(
                       onTap: Get.back<void>,
-                      overlayColor:
-                          WidgetStateProperty.all(Colors.transparent),
+                      overlayColor: WidgetStateProperty.all(Colors.transparent),
                       highlightColor: Colors.transparent,
                       child: SvgPicture.asset(
                         kCloseIconPath,

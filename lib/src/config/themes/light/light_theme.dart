@@ -107,6 +107,7 @@ class LightTheme {
       // Sliding color
       secondary: const Color(0xFF181818),
       surface: const Color(0xFFF8F3F7),
-    ), tabBarTheme: const TabBarThemeData(indicatorColor: Color(0xB3181818)),
+    ),
+    tabBarTheme: const TabBarThemeData(indicatorColor: Color(0xB3181818)),
   );
 }
