@@ -28,7 +28,7 @@ class VideoThumbnail extends StatelessWidget {
         if (bytes == null) return const _LoadingGridViewItem();
 
         return InkWell(
-          overlayColor: MaterialStateProperty.all(Colors.transparent),
+          overlayColor: WidgetStateProperty.all(Colors.transparent),
           highlightColor: Colors.transparent,
           onTap: onTap,
           child: _LoadedGridViewItem(
@@ -102,7 +102,7 @@ class _LoadedGridViewItem extends StatelessWidget {
         ),
         DecoratedBox(
           decoration: BoxDecoration(
-            color: Theme.of(context).colorScheme.background,
+            color: Theme.of(context).colorScheme.surface,
             border: Border.all(
               color: Theme.of(context).colorScheme.secondary,
             ),

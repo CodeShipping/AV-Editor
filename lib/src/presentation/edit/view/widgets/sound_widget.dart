@@ -18,7 +18,7 @@ class _SoundWidget extends StatelessWidget {
       controller: editViewController.autoScrollController,
       index: index,
       child: InkWell(
-        overlayColor: MaterialStateProperty.all(Colors.transparent),
+        overlayColor: WidgetStateProperty.all(Colors.transparent),
         highlightColor: Colors.transparent,
         onTap: () async {
           await editViewController.autoScrollController.scrollToIndex(

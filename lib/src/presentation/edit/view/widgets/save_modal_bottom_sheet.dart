@@ -12,7 +12,7 @@ class SaveModalBottomSheet extends StatelessWidget {
     final editViewController = Get.find<EditViewController>();
 
     return Material(
-      color: context.theme.colorScheme.background,
+      color: context.theme.colorScheme.surface,
       child: DecoratedBox(
         decoration: BoxDecoration(
           border: Border(
@@ -51,7 +51,7 @@ class SaveModalBottomSheet extends StatelessWidget {
                         Get.back<void>();
                       },
                       overlayColor:
-                          MaterialStateProperty.all(Colors.transparent),
+                          WidgetStateProperty.all(Colors.transparent),
                       highlightColor: Colors.transparent,
                       child: Obx(
                         () {

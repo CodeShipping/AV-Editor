@@ -4,12 +4,12 @@
 
 import 'dart:async';
 
-import 'package:flutter/services.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
-import 'package:get/get.dart';
 import 'package:aveditor/src/config/config.dart';
 import 'package:aveditor/src/core/core.dart';
 import 'package:aveditor/src/presentation/presentation.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:get/get.dart';
 
 class AppController extends GetxController {
   AppController({

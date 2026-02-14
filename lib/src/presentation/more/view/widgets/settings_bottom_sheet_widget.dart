@@ -10,7 +10,7 @@ class _SettingsBottomSheetWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: context.theme.colorScheme.background,
+      color: context.theme.colorScheme.surface,
       child: DecoratedBox(
         decoration: BoxDecoration(
           border: Border(
@@ -45,7 +45,7 @@ class _SettingsBottomSheetWidget extends StatelessWidget {
                     InkWell(
                       onTap: Get.back<void>,
                       overlayColor:
-                          MaterialStateProperty.all(Colors.transparent),
+                          WidgetStateProperty.all(Colors.transparent),
                       highlightColor: Colors.transparent,
                       child: SvgPicture.asset(
                         kCloseIconPath,

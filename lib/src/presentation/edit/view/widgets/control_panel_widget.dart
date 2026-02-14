@@ -45,7 +45,7 @@ class _ControlPanelWidget extends StatelessWidget {
                 children: [
                   InkWell(
                     onTap: editViewController.onTapSettingsButton,
-                    overlayColor: MaterialStateProperty.all(Colors.transparent),
+                    overlayColor: WidgetStateProperty.all(Colors.transparent),
                     highlightColor: Colors.transparent,
                     child: AnimatedBuilder(
                       animation: editViewController.animation,
@@ -71,7 +71,7 @@ class _ControlPanelWidget extends StatelessWidget {
                   ),
                   InkWell(
                     onTap: editViewController.onTapSaveButton,
-                    overlayColor: MaterialStateProperty.all(Colors.transparent),
+                    overlayColor: WidgetStateProperty.all(Colors.transparent),
                     highlightColor: Colors.transparent,
                     child: AnimatedBuilder(
                       animation: editViewController.animation,

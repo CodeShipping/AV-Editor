@@ -26,12 +26,11 @@ class LightTheme {
     primaryColorLight: const Color(0xFF181818),
     scaffoldBackgroundColor: const Color(0xFFF8F3F7),
     cardColor: const Color(0xFFF8F3F7),
-    indicatorColor: const Color(0xB3181818),
     focusColor: const Color(0x66F8F3F7),
     dividerColor: const Color(0x80181818),
     splashColor: const Color(0x33181818),
     iconTheme: const IconThemeData(color: Color(0xFF181818)),
-    appBarTheme: const AppBarTheme(color: Color(0xFFF8F3F7)),
+    appBarTheme: const AppBarTheme(backgroundColor: Color(0xFFF8F3F7)),
     sliderTheme: SliderThemeData(
       activeTrackColor: const Color(0xFF181818),
       inactiveTrackColor: const Color(0xFF181818),
@@ -54,10 +53,10 @@ class LightTheme {
     ),
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: ButtonStyle(
-        shape: MaterialStateProperty.all(
+        shape: WidgetStateProperty.all(
           RoundedRectangleBorder(borderRadius: BorderRadius.circular(1)),
         ),
-        side: MaterialStateProperty.all(
+        side: WidgetStateProperty.all(
           const BorderSide(color: Color(0xFF181818)),
         ),
       ),
@@ -107,7 +106,7 @@ class LightTheme {
       primary: const Color(0xFFF8F3F7),
       // Sliding color
       secondary: const Color(0xFF181818),
-      background: const Color(0xFFF8F3F7),
-    ),
+      surface: const Color(0xFFF8F3F7),
+    ), tabBarTheme: const TabBarThemeData(indicatorColor: Color(0xB3181818)),
   );
 }

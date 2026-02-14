@@ -2,6 +2,9 @@
 // Use of this source code is governed by a GPL-style license that can be found
 // in the LICENSE file.
 
+import 'package:aveditor/src/components/components.dart';
+import 'package:aveditor/src/core/core.dart';
+import 'package:aveditor/src/presentation/presentation.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -11,9 +14,6 @@ import 'package:scroll_to_index/scroll_to_index.dart';
 import 'package:sizer/sizer.dart';
 import 'package:text_scroll/text_scroll.dart';
 import 'package:video_player/video_player.dart';
-import 'package:aveditor/src/components/components.dart';
-import 'package:aveditor/src/core/core.dart';
-import 'package:aveditor/src/presentation/presentation.dart';
 
 part 'widgets/control_panel_widget.dart';
 part 'widgets/no_sound_widget.dart';

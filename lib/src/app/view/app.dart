@@ -2,13 +2,13 @@
 // Use of this source code is governed by a GPL-style license that can be found
 // in the LICENSE file.
 
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:sizer/sizer.dart';
 import 'package:aveditor/src/app/app.dart';
 import 'package:aveditor/src/components/components.dart';
 import 'package:aveditor/src/core/core.dart';
 import 'package:aveditor/src/presentation/presentation.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:sizer/sizer.dart';
 
 class App extends StatelessWidget {
   const App({super.key});

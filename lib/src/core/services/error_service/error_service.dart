@@ -51,7 +51,7 @@ class _ErrorModalBottomSheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Theme.of(context).colorScheme.background,
+      color: Theme.of(context).colorScheme.surface,
       child: DecoratedBox(
         decoration: BoxDecoration(
           border: Border(
@@ -87,7 +87,7 @@ class _ErrorModalBottomSheet extends StatelessWidget {
                       InkWell(
                         onTap: () => Navigator.pop(context),
                         overlayColor:
-                            MaterialStateProperty.all(Colors.transparent),
+                            WidgetStateProperty.all(Colors.transparent),
                         highlightColor: Colors.transparent,
                         child: SvgPicture.asset(
                           closeIconPath!,

@@ -6,6 +6,9 @@ import 'dart:async';
 import 'dart:developer' as developer;
 import 'dart:io';
 
+import 'package:aveditor/src/components/components.dart';
+import 'package:aveditor/src/core/core.dart';
+import 'package:aveditor/src/presentation/presentation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_gallery_saver_plus/image_gallery_saver_plus.dart';
@@ -14,9 +17,6 @@ import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:photo_manager/photo_manager.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
-import 'package:aveditor/src/components/components.dart';
-import 'package:aveditor/src/core/core.dart';
-import 'package:aveditor/src/presentation/presentation.dart';
 
 class EditViewController extends GetxController
     with GetSingleTickerProviderStateMixin {
@@ -204,7 +204,9 @@ class EditViewController extends GetxController
 
   Future<void> _videoListener() async {
     if (_videoPlayerService.position.inSeconds !=
-        _videoPlayerService.duration.inSeconds) return;
+        _videoPlayerService.duration.inSeconds) {
+      return;
+    }
 
     try {
       await Future.wait<void>([

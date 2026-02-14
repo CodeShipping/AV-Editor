@@ -2,8 +2,8 @@
 // Use of this source code is governed by a GPL-style license that can be found
 // in the LICENSE file.
 
-import 'package:flutter/material.dart';
 import 'package:aveditor/src/config/config.dart';
+import 'package:flutter/material.dart';
 
 /// [AppTheme]
 ///

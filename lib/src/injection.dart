@@ -2,10 +2,10 @@
 // Use of this source code is governed by a GPL-style license that can be found
 // in the LICENSE file.
 
+import 'package:aveditor/src/core/core.dart';
 import 'package:get_it/get_it.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:video_player/video_player.dart';
-import 'package:aveditor/src/core/core.dart';
 
 final sl = GetIt.instance;
 

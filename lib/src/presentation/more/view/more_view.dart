@@ -2,13 +2,13 @@
 // Use of this source code is governed by a GPL-style license that can be found
 // in the LICENSE file.
 
+import 'package:aveditor/src/components/components.dart';
+import 'package:aveditor/src/core/core.dart';
+import 'package:aveditor/src/presentation/presentation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:nil/nil.dart';
-import 'package:aveditor/src/components/components.dart';
-import 'package:aveditor/src/core/core.dart';
-import 'package:aveditor/src/presentation/presentation.dart';
 
 part 'widgets/copyright_widget.dart';
 part 'widgets/more_items_widget.dart';
