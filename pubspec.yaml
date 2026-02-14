@@ -37,7 +37,7 @@ dependencies:
   scroll_to_index: ^3.0.1
   shared_preferences: ^2.2.2
   sizer: ^2.0.15
-  text_scroll: ^0.2.0
+  text_scroll: ^0.2.1
   url_launcher: ^6.2.1
   video_player: ^2.7.0
   wakelock_plus: ^1.1.3
