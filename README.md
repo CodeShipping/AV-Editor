@@ -1,65 +1,75 @@
-# <p align="center">AV Editor</p> 
+# AV Editor
 
-<p align="justify">AV Editor is a video audio editing app that can add audio to videos, remove audio from videos, adjust playback speed, and change video quality. All processing is done on-device and videos are saved directly to your gallery.</p>
+A simple, powerful video audio editor for Android. Add music to videos, remove audio, adjust speed, and change quality — all processed on-device with no watermarks.
 
-<p align="justify">This is a modified version of VSound by BBK Development, rebranded and maintained by CodeShipping. The app is free, open-source (GPL v3), and ad-free.</p>
+## Features
 
-&nbsp;
+- **Add/Replace Audio** — Add music or sound to any video
+- **Remove Audio** — Mute videos completely
+- **Speed Control** — 0.25x to 2.0x playback speed
+- **Quality Control** — Convert to 240p-2160p (4K)
+- **No Watermark** — Clean output videos
+- **Offline Processing** — Works without internet
+- **Save to Gallery** — Direct export to device storage
 
-<p align="center">Official Repository: <a href="https://github.com/CodeShipping/AV-Editor">CodeShipping</a></p>
+## Screenshots
 
-&nbsp;
+[Add screenshots here]
 
-### Key Features
-- Add audio/music to any video
-- Review the video before processing
-- Mute/remove audio from videos
-- Change video playback speed (0.25x to 2.0x)
-- Change output video quality (240p to 2160p/4K)
-- Save processed videos to gallery
-- Share videos anywhere
-- No watermark on output videos
-- Completely ad-free
-- Works offline
+## Download
 
-&nbsp;
+Available on Google Play Store (coming soon)
 
-## <p align="center">Technical Details</p>
+## Building from Source
 
-- **Package:** org.codeshipping.aveditor
-- **License:** GPL v3
-- **Based on:** VSound by BBK Development
-- **Processing:** FFmpeg
-- **Platforms:** Android
+### Requirements
+- Flutter 3.13.5+
+- Android SDK with API 36+
+- Java 17+
 
-&nbsp;
+### Setup
+```bash
+git clone https://github.com/CodeShipping/AV-Editor.git
+cd AV-Editor
+flutter pub get
+flutter run --flavor development -t lib/main_development.dart
+```
 
-## <p align="center">Attribution</p>
+### Build Release
+```bash
+flutter build apk --flavor production --release -t lib/main_production.dart
+```
 
-This app is a modified version of **VSound** created by **BBK Development**.
+## Attribution
 
-Original project: https://github.com/BBKDevelopment/VSound
+This project is a modified version of [VSound](https://github.com/BBKDevelopment/VSound) by BBK Development.
 
-Licensed under GPL v3, which allows commercial use, modification, and distribution with the requirement that derivative works remain open source under the same license.
+**Original:** Copyright © 2021-2023 BBK Development  
+**Modified:** Copyright © 2026 CodeShipping
 
-&nbsp;
+See [NOTICE](NOTICE) for detailed attribution and modifications.
 
-## <p align="center">Privacy & Terms</p>
+## License
 
-[<p align="center">Privacy Policy</p>](https://codeshipping.org/apps/aveditor/privacy-policy)
+This project is licensed under **GNU General Public License v3.0**.
 
-&nbsp;
+- ✅ Free to use, modify, and distribute
+- ✅ Commercial use allowed
+- ✅ Must remain open source (GPL v3)
+- ✅ Must provide source code to users
 
-[<p align="center">Terms & Conditions</p>](https://codeshipping.org/apps/aveditor/terms-and-conditions)
+See [LICENSE](LICENSE) for full terms.
 
-&nbsp;
+## Contributing
 
-## <p align="center">License</p>
+Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-This project is licensed under GPL v3. See LICENSE file for details.
+## Contact
 
-&nbsp;
+- **Email:** contact@codeshipping.org
+- **Issues:** [GitHub Issues](https://github.com/CodeShipping/AV-Editor/issues)
+- **Original Author:** BBK Development (hello@bbkdevelopment.com)
 
 ---
 
-**Note:** You must publish the source code of this app if you distribute it, as required by GPL v3.
+**Note:** This app is GPL v3 licensed. Source code must be made available to users as required by the license.
