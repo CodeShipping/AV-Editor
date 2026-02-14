@@ -1,4 +1,4 @@
-name: vsound
+name: aveditor
 
 concurrency:
   group: $-$
