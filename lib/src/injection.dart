@@ -20,7 +20,7 @@ Future<void> init() async {
     ..registerSingleton<UrlLauncherService>(const UrlLauncherService())
     ..registerSingleton<PhotoManagerService>(PhotoManagerService())
     ..registerSingleton<LaunchReviewService>(
-      const LaunchReviewService(androidAppId: kAndroidAppId),
+      const LaunchReviewService(),
     )
     ..registerSingleton<SharedPreferencesService>(
       SharedPreferencesService(sharedPreferences: sharedPreferences),

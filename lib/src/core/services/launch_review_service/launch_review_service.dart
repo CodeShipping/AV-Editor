@@ -17,7 +17,6 @@ class LaunchReviewException implements Exception {}
 class LaunchReviewService {
   /// {@macro launch_review_service}
   const LaunchReviewService({
-    String? androidAppId,
     String? iOSAppId,
   }) : _iOSAppId = iOSAppId;
 
